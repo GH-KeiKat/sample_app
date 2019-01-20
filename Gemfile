@@ -9,6 +9,8 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 
+gem 'bcrypt',         '3.1.12'
+
 #Change bootstrap-less to sass for rails
 gem 'bootstrap-sass', '3.3.7'
 
@@ -37,6 +39,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# for integration test (Chapter4 )
+  gem 'rails-controller-testing' 
+
 group :development, :test do
   
   gem 'sqlite3', '1.3.13'
@@ -56,7 +61,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
 end
+
+
 
 group :production do
   gem 'pg', '0.20.0'
